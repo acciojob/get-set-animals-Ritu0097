@@ -13,17 +13,16 @@ class Animal {
 }
 
 class Dog extends Animal {
-	bark() {
+	makeSound() {
 		console.log(`The ${this.species} makes a sound`);
 	}
 }
 
 class Cat extends Animal {
-	purr() {
-		console.log("The Siamese makes a sound");
+	makeSound() {
+		console.log(`The ${this.species} makes a sound`);
 	}
 }
-
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
