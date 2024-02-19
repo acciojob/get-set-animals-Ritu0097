@@ -1,29 +1,39 @@
 class Animal {
-	constructor(species){
+	constructor(species) {
 		this._species = species;
 	}
 	
-	get species(){
+	get species() {
 		return this._species;
 	}
 
-	set species(species){
+	set species(species) {
 		this._species = species;
 	}
 
 	makeSound() {
-		console.log("The animal makes a sound");
+		console.log(`The ${this._species} makes a sound`);
 	}
 }
 
 class Dog extends Animal {
-	bark(){
+	constructor(species) {
+		super(species);
+		this._species = species;
+	}
+
+	bark() {
 		console.log("woof");
 	}
 }
 
 class Cat extends Animal {
-	purr(){
+	constructor(species) {
+		super(species);
+		this._species = species;
+	}
+
+	purr() {
 		console.log("purr");
 	}
 }
